@@ -5,3 +5,5 @@ WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
 ADD . /code/
+ADD start.py /code/
+RUN python start.py
